@@ -1,0 +1,23 @@
+.App{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px); //topbar가 70px 이므로
+        background-color: rgb(247, 23, 23);
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth; //스크롤 부드럽게 이동
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //파이어폭스에서만 가능
+        &::-webkit-scrollbar{
+            display: none; //크롬에 가능
+        }
+
+    > * {                       //sectiosn안 자식요소들에게
+        width: 100vw;
+        height: calc(100vh - 70px);
+        scroll-snap-align: start;
+    }   
+    }
+}
