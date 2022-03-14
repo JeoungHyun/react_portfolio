@@ -6,31 +6,34 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
+      icon: "https://cdn.icon-icons.com/icons2/1130/PNG/512/numberoneinacircle_80030.png",
+      title: "SQI소프트",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "키오스크 설치 및 아침 방송 관리",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
-    },
+        "https://cdn.ready-market.com/106/4e186a11//Templates/pic/Interactive-Kiosk.jpg?v=b14be40b",
+      day:"2018.12 ~ 2019.11"
+      },
     {
       id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
+      icon: "https://cdn.icon-icons.com/icons2/1130/PNG/512/numbertwoinacircle_80299.png",
+      title: "구디아카데미",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        `교육과정 : 빅데이터 플랫폼 개발자 양성과정 수료`,
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
+        "https://fpost.co.kr/board/data/editor/2109/5a7f94599dc81c5f7f9ea8b5eaf0184d_1632557064_2498.jpg",
+      day:"2020.02 ~ 2020.09"
+      },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "https://cdn.icon-icons.com/icons2/1130/PNG/512/numberthreeinacircle_80289.png",
+      title: "데이타게이트코리아",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "서버 보안 솔루션개발",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+        "https://cdn.pixabay.com/photo/2018/04/08/21/03/genomic-privacy-3302478_960_720.png",
+      day:"2020.12 ~ 2021.11"
+      },
   ];
 
   const handleClick = (way) => {
@@ -45,8 +48,8 @@ export default function Works() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {data.map((d,index) => (
-          <div className="container" key={index}>
+        {data.map((d) => (
+          <div className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -55,12 +58,12 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                 <span>{d.day}</span>
                 </div>
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>
@@ -69,13 +72,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src="https://jeounghyun.github.io/react_portfolio/assets/arrow.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src="https://jeounghyun.github.io/react_portfolio/assets/arrow.png"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}

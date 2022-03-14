@@ -9,10 +9,8 @@ export default function Topbar({menuOpen,setMenuOpen}) {
             <div className='left'>
                 <a href='#intro' className='logo'>JH.</a>
                 <div className='itemContainer'>
-                <span className='icons'>010-4564-3239</span>
                 </div>                          
                 <div className='itemContainer'>
-                <span className='icons'>cho3153238@naver.com</span>
                 </div>            
             </div>
             <div className='right'>

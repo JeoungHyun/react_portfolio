@@ -13,7 +13,7 @@ export default function Intro() {
       showCursor : true,
       backSpeed:60,
       backDelay:1500,
-      strings:['Use with react!','yeahhhh!!']
+      strings:['React로 만들어 본 포트폴리오 사이트입니다.']
     })
   },[])
 
@@ -22,16 +22,16 @@ export default function Intro() {
     <div className='intro' id='intro'>
       <div className='left'>
         <div className='imgContainer'>
-          <img src="assets/me.jpg"></img>
+          <img src="https://jeounghyun.github.io/react_portfolio/assets/me.jpg"></img>
         </div>
       </div>
       <div className='right'>
         <div className="wrapper">
-          <h2>조정현</h2>
-          <h1>01045643239</h1>
-          <h3>경기도시흥시매화동 <span ref={textRef}></span></h3>
+          <h2>안녕하세요!</h2>
+          <h1>조정현입니다.</h1>
+          <h3><span ref={textRef}></span></h3>
           <a href='#portfolio'>
-          <img src="assets/down.png" alt=""/>
+          <img src="https://jeounghyun.github.io/react_portfolio/assets/down.png" alt=""/>
         </a>
         </div>
 
