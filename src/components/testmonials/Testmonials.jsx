@@ -41,7 +41,7 @@ export default function Testimonials() {
         {data.map((d,index) => (
           <div className={d.featured ? "card featured" : "card"} key={index}>
             <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
+              <img src="assets/right-arrow.png" className="left" alt="" style={{background:'color'}} />
               <img
                 className="user"
                 src={d.img}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { frontEnd, backEnd ,certificate} from "../../data";
+import { frontEnd, backEnd, certificate, DB } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("frontEnd");
@@ -16,9 +16,14 @@ export default function Portfolio() {
       title: "BackEnd",
     },
     {
+      id: "DB",
+      title: "DB",
+    },
+    {
       id: "certificate",
       title: "Certificate",
     },
+
   ];
 
   useEffect(() => {
@@ -28,6 +33,9 @@ export default function Portfolio() {
         break;
       case "backEnd":
         setData(backEnd);
+        break;
+      case "DB":
+        setData(DB);
         break;
       case "certificate":
         setData(certificate);
@@ -50,7 +58,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className="container">
+      <div className="container" style={{ paddingTop: "100px" }}>
         {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="" />

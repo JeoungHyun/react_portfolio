@@ -23,12 +23,12 @@ export const frontEnd = [
       img:
         "https://media.vlpt.us/images/jini_eun/post/107f5cfb-e97c-4c4c-b997-06098062e5b3/image.png",
     },
-    {
-      id: 5,
-      title: "Ext Js",
-      img:
-        "https://www.alfasoft.com/images/products/sencha/images/sencha_extjs_logo.png",
-    },
+    // {
+    //   id: 5,
+    //   title: "Ext Js",
+    //   img:
+    //     "https://res.cloudinary.com/practicaldev/image/fetch/s--RzIUu8Ns--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mu70yz6oo2w1xdlfw3dc.png",
+    // },
   ];
   
   export const backEnd = [
@@ -43,16 +43,30 @@ export const frontEnd = [
       img: "https://t1.daumcdn.net/cfile/tistory/9941A1385B99240D2E",
     },
     {
-      id: 3,
-      title: "PostgreSQL",
-      img: "https://blog.kakaocdn.net/dn/b61nKR/btqED0HqzV4/R7t8vGff5tzCPNPreUhWak/img.png",
-    },
-    {
-      id: 4,
-      title: "MariaDB",
-      img: "https://d1.awsstatic.com/logos/partners/MariaDB_Logo.d8a208f0a889a8f0f0551b8391a065ea79c54f3a.png",
+      id:3,
+      title: "Node",
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNj_X_9ajZAyY3LeDeRBh4V_B71l1H-Z4Ejw&usqp=CAU"
     },
   ];
+
+  export const DB = [
+    {
+      id: 1,
+      title: "MySQL",
+      img: "https://velog.velcdn.com/images/vive0508/post/5263b112-f9ae-43c6-aba5-b407f7eac0f2/image.jpeg",
+    },
+    {
+      id: 2,
+      title: "PostgreSQL",
+      img: "https://icon-library.com/images/postgresql-icon/postgresql-icon-12.jpg",
+    },
+    {
+      id:3,
+      title: "MsSQL",
+      img:"https://dataera.com.tr/wp-content/uploads/2018/07/mssql-logo-1-820x450.jpg"
+    },
+  ];
+
   
   export const certificate = [
     {

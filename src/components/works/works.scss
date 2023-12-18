@@ -1,7 +1,15 @@
 @import "../../global.scss";
 
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 .works {
-  background-color: crimson;
+  //background-color: #90535e;
+  background-color: #f5ebe0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +135,7 @@
 
           img {
             width: 400px;
-            transform: rotate(-10deg);
+            // transform: rotate(-10deg);
           }
         }
       }
